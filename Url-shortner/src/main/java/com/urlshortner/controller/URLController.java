@@ -19,7 +19,7 @@ public class URLController {
 
     @PostMapping("/short-url")
     public ResponseEntity<?> shortenUrl(@RequestBody ShortURLRequest request) {
-            return ResponseEntity.status(CREATED).body(shortURLService.createShorten(request));
+            return ResponseEntity.status(CREATED).body(shortURLService.createShortenUrl(request));
 
 
     }
