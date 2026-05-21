@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36">
+  <diagram name="Page-1" id="3yv_aEfVJ-tSU1LUVknU">
+    <mxGraphModel dx="1393" dy="1935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LkZehM3MHmDMSOxHesVt-2" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;3&quot;&gt;&lt;b data-path-to-node=&quot;3&quot; data-index-in-node=&quot;0&quot;&gt;URLController «controller»&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="150" width="320" x="62" y="-1040" as="geometry" />
+        </mxCell>
+        <mxCell id="LkZehM3MHmDMSOxHesVt-3" parent="LkZehM3MHmDMSOxHesVt-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;div&gt;- ShortenUrl service&lt;/div&gt;&lt;div&gt;+&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;shortenUrl(reques ShortUrlRequest)&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;CreateUrlResponse&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getOriginalUrl(Sting horUrl) String&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="320" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LkZehM3MHmDMSOxHesVt-4" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;5&quot;&gt;&lt;b data-path-to-node=&quot;5&quot; data-index-in-node=&quot;0&quot;&gt;ShortenUrlService «service»&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="160" width="370" x="570" y="-1062" as="geometry" />
+        </mxCell>
+        <mxCell id="LkZehM3MHmDMSOxHesVt-5" parent="LkZehM3MHmDMSOxHesVt-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;li&gt;&lt;p data-path-to-node=&quot;6,1,0&quot;&gt;&lt;code data-path-to-node=&quot;6,1,0&quot; data-index-in-node=&quot;0&quot;&gt;- repository UrlRepository&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,1,0&quot;&gt;&lt;code data-path-to-node=&quot;6,1,0&quot; data-index-in-node=&quot;0&quot;&gt;+ createShortenUrl(request: UrlRequest): C&lt;/code&gt;&lt;span style=&quot;font-family: monospace; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;reateShortenUrlResponse&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;6,2,0&quot;&gt;&lt;code data-path-to-node=&quot;6,2,0&quot; data-index-in-node=&quot;0&quot;&gt;+ getLongUrl(shortUrl: String): String&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;" vertex="1">
+          <mxGeometry height="130" width="370" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LkZehM3MHmDMSOxHesVt-8" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;b data-path-to-node=&quot;7&quot; data-index-in-node=&quot;0&quot; style=&quot;text-align: left; color: rgb(18, 18, 18);&quot;&gt;UrlRepository «repository»&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="370" x="1106" y="-1020" as="geometry" />
+        </mxCell>
+        <mxCell id="LkZehM3MHmDMSOxHesVt-9" parent="LkZehM3MHmDMSOxHesVt-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;8,0,0&quot;&gt;&lt;code data-path-to-node=&quot;8,0,0&quot; data-index-in-node=&quot;0&quot;&gt;+ findByShortUrl(userId: UUID): Optional&amp;lt;Wallet&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;" vertex="1">
+          <mxGeometry height="60" width="370" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LkZehM3MHmDMSOxHesVt-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;13&quot;&gt;&lt;b data-path-to-node=&quot;13&quot; data-index-in-node=&quot;0&quot;&gt;Url «entity»&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="190" x="740" y="-820" as="geometry" />
+        </mxCell>
+        <mxCell id="LkZehM3MHmDMSOxHesVt-14" parent="LkZehM3MHmDMSOxHesVt-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;li&gt;&lt;p data-path-to-node=&quot;14,0,0&quot;&gt;&lt;code data-path-to-node=&quot;14,0,0&quot; data-index-in-node=&quot;0&quot;&gt;- id: UUID&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;14,1,0&quot;&gt;&lt;span class=&quot;citation-1127&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p data-path-to-node=&quot;14,1,1&quot; id=&quot;p-rc_02a3859939f39792-604&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- shortUrl: String&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;14,4,0&quot;&gt;&lt;code data-path-to-node=&quot;14,4,0&quot; data-index-in-node=&quot;0&quot;&gt;- longUrl: String&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;14,5,0&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;/li&gt;" vertex="1">
+          <mxGeometry height="100" width="190" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LkZehM3MHmDMSOxHesVt-36" edge="1" parent="1" source="LkZehM3MHmDMSOxHesVt-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.002;entryY=0.631;entryDx=0;entryDy=0;entryPerimeter=0;" target="LkZehM3MHmDMSOxHesVt-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0BHQYqP1dGoLg6jiXTr3-2" edge="1" parent="1" source="LkZehM3MHmDMSOxHesVt-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.006;entryY=0.37;entryDx=0;entryDy=0;entryPerimeter=0;" target="LkZehM3MHmDMSOxHesVt-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0BHQYqP1dGoLg6jiXTr3-5" edge="1" parent="1" source="LkZehM3MHmDMSOxHesVt-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LkZehM3MHmDMSOxHesVt-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
