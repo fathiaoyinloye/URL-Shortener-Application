@@ -7,6 +7,7 @@ import com.urlshortner.dtos.ShortURLResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Value;
 
 
 
@@ -15,15 +16,18 @@ public class ShortURLService {
     @Autowired
     private URLRepository repository;
 
+    @Value("${app.base.url}")
+    private String baseUrl;
+
     public ShortURLResponse createShortenUrl(ShortURLRequest request){
-        URL url  = new URL();
+        URL url = new URL();
         url.setLongUrl(request.getLongUrl());
         url.setShortUrl(request.getName());
         repository.save(url);
         ShortURLResponse response = new ShortURLResponse();
         response.setMessage("Short URL Successfully created");
-        response.setShortUrl("http://localhost:8080/" + url.getShortUrl());
-        return  response;
+        response.setShortUrl(baseUrl + url.getShortUrl());
+        return response;
     }
 
     @Cacheable(value = "urls", key = "#shortUrl")
