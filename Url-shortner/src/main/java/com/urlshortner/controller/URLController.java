@@ -16,7 +16,7 @@ import static org.springframework.http.HttpStatus.MOVED_PERMANENTLY;
 public class URLController {
     @Autowired
     private ShortURLService shortURLService;
-//
+
     @PostMapping("/short-url")
     public ResponseEntity<?> shortenUrl(@RequestBody ShortURLRequest request) {
             return ResponseEntity.status(CREATED).body(shortURLService.createShortenUrl(request));
