@@ -1,3 +1,3 @@
 spring.application.name=Url-shortner
-spring.data.mongodb.uri=Spring_Data_MongoDB_URI
 logging.level.org.springframework.web=DEBUG
+spring.data.mongodb.uri=${SPRING_DATA_MONGODB_URI:mongodb+srv://fathiaoyinloye:czIrNz2O6WZ34SXD@cluster0.ez5zkkh.mongodb.net/url_shortener?appName=Cluster0}

@@ -22,7 +22,7 @@ export default function App() {
 
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:8080/short-url', {
+        const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/short-url`, {
         longUrl:  longUrl,
         name:     shortName
       });
