@@ -31,11 +31,13 @@ public class URLController {
     @GetMapping("/{shortUrl}")
     public ResponseEntity<?> getOriginalUrl(@PathVariable String shortUrl) {
         String longUrl = shortURLService.getLongUrl(shortUrl);
+        log.info("Redirecting to long url: {}", longUrl);
         try{
         return ResponseEntity.status(MOVED_PERMANENTLY)
                 .location(URI.create(longUrl))
                 .build();
         }catch(RuntimeException e){
+            log.error("Error while redirecting to long url: {}", e.getMessage());
             return ResponseEntity.badRequest().body((e.getMessage()));
         }
     }
