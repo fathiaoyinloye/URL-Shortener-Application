@@ -13,7 +13,6 @@ import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.MOVED_PERMANENTLY;
 @Slf4j
 @RestController
-@CrossOrigin(origins = "*")
 @RequestMapping("")
 public class URLController {
     @Autowired
